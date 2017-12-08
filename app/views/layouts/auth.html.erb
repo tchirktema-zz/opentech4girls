@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OPENTECH4GIRLS</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+        body{
+          color: white;
+        }
+        .register-background{
+
+          background:  url(/resources/img/bg.jpg);
+
+        }
+
+    </style>
+  </head>
+
+  <body class="register-background">
+    <div class="register">
+      <div class="container">
+            <div class="row">
+                <%= yield %>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>

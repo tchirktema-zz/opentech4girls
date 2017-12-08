@@ -51,6 +51,13 @@ gem 'jquery-ui-rails'
 #use for select feild
 gem 'enumerize'
 
+#authentification gem
+gem 'devise'
+
+#use form admin interface
+gem 'rails_admin', '~> 1.2'
+gem 'rails_admin_material'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

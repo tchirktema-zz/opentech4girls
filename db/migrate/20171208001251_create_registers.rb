@@ -6,7 +6,7 @@ class CreateRegisters < ActiveRecord::Migration[5.1]
       t.string :email
       t.string :phone
       t.string :degree
-      t.integer :age
+      t.date :age
       t.boolean :have_computer
       t.boolean :use_internet
       t.string :sex
