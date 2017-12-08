@@ -1,3 +1,29 @@
-<%= notice %>
-
-<h4>Hello</h4>
+<div class="slider fullscreen">
+  <ul class="slides">
+    <li>
+      <%= image_tag "/resources/img/web.jpg" %>
+      <div class="caption center-align">
+        <h1>#OpenTech4Girls</h1>
+        <h5 class="light grey-text text-lighten-3">est un hackathon qui a pour objectif  d’initiation au monde du numérique, entrepreneuriat et leadership pour les jeunes femmes</h5>
+        <br>
+        <p class="light grey-text text-lighten-3" >Date : du 27 au 30 décembre 2017</p>
+        <%= link_to "Je participe", new_register_path,:class=>"btn btn teal darken-3" %>
+      </div>
+    </li>
+    <li>
+      <%= image_tag "/resources/img/karate.jpg" %>
+      <div class="caption left-align">
+        <h3>#OpenTech4Girls</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+    </li>
+    <li>
+      <%= image_tag "/resources/img/seo2.png" %>
+      <div class="caption right-align">
+        <h3>#OpenTech4Girls</h3>
+        <h5 class="light grey-text text-lighten-3">Au programme : </h5>
+        <p>-</p>
+      </div>
+    </li>
+  </ul>
+</div>
