@@ -48,6 +48,8 @@ gem 'materialize-form'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
+#use for select feild
+gem 'enumerize'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
