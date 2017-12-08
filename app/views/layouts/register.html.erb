@@ -6,11 +6,24 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+        body{
+          color: white;
+        }
+        .register-background{
+
+          background:  url(/resources/img/bg.jpg);
+
+        }
+
+    </style>
   </head>
 
-  <body>
-    <div class="container">
-          <%= yield %>
+  <body class="register-background">
+    <div class="register">
+      <div class="container">
+            <%= yield %>
+      </div>
     </div>
   </body>
 </html>
