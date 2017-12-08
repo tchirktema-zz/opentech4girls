@@ -1,16 +1,53 @@
-<%= simple_form_for @register  do |form| %>
-    <%= form.input :name %>
-    <%= form.input :first_name %>
-    <%= form.input :email %>
-    <%= form.input :phone %>
-    <%= form.input :degree %>
-    <%= form.input :age %>
-    <%= form.input :have_computer %>
-    <%= form.input :use_internet %>
-    <%= form.input :sex %>
-    <%= form.input :twitter_url %>
-    <%= form.input :facebook_url %>
-    <%= form.input :comment %>
+<div class="row">
 
-    <%= form.button :submit %>
-<% end %>
+  <%= simple_form_for @register  do |form| %>
+
+      <div class="col s12 m6">
+          <%= form.input :name,label:false,placeholder: "Nom de famille", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+      <div class="col s12 m6">
+          <%= form.input :first_name,label:false,placeholder: "Prenom", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+      <div class="col s12 m6">
+          <%= form.input :email,label:false,placeholder: "Adresse email", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+      <div class="col s12 m6">
+          <%= form.input :phone,label:false,placeholder: "Numero de telephone", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+      <div class="col s12 m6">
+          <%= form.input :degree,label: "Niveau d'etude", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+      <div class="col s12 m6">
+          <%= form.input :age,label:false,placeholder: "Age ", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+      <div class="col s12 m12">
+          <%= form.input :sex,label:"sexe", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+
+
+      <div class="col s12 m6">
+        <%= form.input :have_computer,label:"Avez vous un ordinateur?", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+      <div class="col s12 m6">
+        <%= form.input :use_internet,label: "Utilisez vous internet regulièrement?", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+
+      <div class="col s12 m6">
+      <%= form.input :twitter_url,label: false,placeholder: "Lien de votre profil twitter si vous en avez", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+
+      <div class="col s12 m6">
+      <%= form.input :facebook_url,label: false,placeholder: "Lien de votre profil facebook si vous en avez", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+
+      <div class="col s12 m12">
+        <%= form.input :comment,label: false,placeholder: "Quels sont vos attentes pour ce hackathon?", wrapper_html: { class: 'm12 s12' } %>
+      </div>
+
+      <div class="col s12 m4 offset-m5">
+          <%= form.button :submit, wrapper_html: { class: 'm12 s12' } %>
+      </div>
+  
+  <% end %>
+
+</div>
